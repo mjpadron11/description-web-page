@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;500&display=swap');
+
+:root {
+    --primary-color: #9FABB2;
+    --padding: 2rem;
+}
+
+body {
+    /* justify-content: center;
+    align-items: center; */
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+    color: hsl(210, 10%, 33%);
+    font-weight: 400;
+}
+
+.main-box {
+    width: 100%;
+    /* max-width: 1400px; */
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.title {
+    padding-top: 4rem;
+}
+
+.main-section {
+    max-width: 1000px;
+
+}
+.background-image {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    border-color: black;
+}
+
+.computer.background-image {
+    width: 100%;
+    height: 100%;
+}
+.devices-image {
+    width: 100%;
+    height: 100%;
+    padding: var(--padding);
+}
+.computer-image {
+    width: 50%;
+}
+.clipboard {
+    color: var(--primary-color);
+}
+.snippets-paragraph {
+    color: var(--primary-color);
+}
+.computer-section-information {
+    color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+.section-info {
+    /* padding: 4rem 2rem 2rem 4rem; */
+    max-width: 800px;
+    width: 100%;
+    width: 35% ;
+
+}
+
+.access-info {
+    color: var(--primary-color);
+}
+.features-general-info {
+    color: var(--primary-color);
+}
+.features-info {
+    color: var(--primary-color);
+    padding: var(--padding);
+    justify-content: center;
+}
+
+
+.download-info {
+    color: var(--primary-color);
+}
+
+.buttons {
+    padding: 4rem;
+}
+.ios-download {
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 28px;
+    color: white;
+    border-color: hsl(171, 66%, 44%);
+    padding: 1rem;
+    /* width: 12%; */
+}
+.mac-download {
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 28px;
+    color: white;
+    border-color:hsl(233, 100%, 69%);
+    padding: 1rem;
+    /* width: 12%; */
+}
+.computer-section {
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: left;
+    padding: 4rem 0;
+    gap:6.5rem;
+
+    }
+
+.clipboard-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    max-width: 1200px;
+    width: 100%;
+
+    /* margin: auto; */
+}
+.access-box {
+    max-width: 1000px;
+    width: 100%;
+}
+.features {
+    max-width: 1700px;
+    width: 100%;
+}
+.brokendown-features {
+    display: flex;
+    justify-content: space-between;
+}
+.feature-icon {
+    height: 40px;
+}
+
+.brokendown-blacklist,
+.brokendown-text,
+.brokendown-preview {
+    max-width: 550px;
+}
+
+.snippets {
+    padding-top: 4rem;
+}
+.partners {
+    /* padding: 4rem; */
+    max-width: 1650px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.download-info {
+    padding: var(--padding);
+}
+
+footer {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 3rem;
+}
+.links {
+    display: flex;
+    
+
+}
+.webpage-logo {
+    height: 50px;
+
+}
