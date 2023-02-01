@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="landing webpage">
     <meta name="author" content="Mariem Padron">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>A history of everything you copy</title>
 </head>
 <body>
-    <img src="/images/bg-header-desktop.png" alt="background image" class="background-image">
+    <picture class="background-image">
+    <source srcset="/images/bg-header-mobile.png" media="(max-width: 768px)" class="mobile-image">
+    <img src="/images/bg-header-desktop.png" alt="background image" class="background-desktop-image">
+    </picture>>
     <div class="main-box">
         <div class="main-section">
             <img src="/images/logo.svg" alt="logo" class="webpage-main-logo">
@@ -26,7 +29,9 @@
             <p class="snippets-paragraph">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
         </div>
         <div class="computer-section">
+            <picture>
             <img src="/images/image-computer.png" alt="computer image" class="computer-image">
+            </picture>
             <div class="section-info">
                 <h3 class="quick-search">Quick Search</h3>
                 <p class="computer-section-information">Easily search your snippets by content, category, web address, application, and more.</p>
@@ -48,49 +53,61 @@
             <p class="features-general-info">We’ve got the tools to boost your productivity.</p>
             <div class="brokendown-features">
                 <div class="brokendown-blacklist">
+                    <picture>
                     <img src="/images/icon-blacklist.svg" alt="blacklists icon" class="feature-icon">
+                    </picture>
                     <h3 class="blacklist">Create blacklists</h3>
                     <p class="features-info">Create blacklists Ensure sensitive information never makes its way to your clipboard by excluding certain sources. </p>
                 </div>
                 <div class="brokendown-text">
+                    <picture>
                     <img src="/images/icon-text.svg" alt="text icon" class="feature-icon">
+                    </picture>
                     <h3 class="text-title">Plain text snippets</h3>
                     <p class="features-info">Remove unwanted formatting from copied text for a consistent look.</p>
                 </div>
                 <div class="brokendown-preview">
+                    <picture>
                     <img src="/images/icon-preview.svg" alt="preview icon" class="feature-icon">
+                    </picture>
                     <h3 class="preview-title">Sneak preview</h3>
                     <p class="features-info">Quick preview of all snippets on your Clipboard for easy access.</p>
                 </div>
             </div>
         </div>
-        <section class="partners">
-            <img src="/images/logo-google.png" alt="Google logo" class="google-logo">
-            <img src="/images/logo-ibm.png" alt="IBM logo" class="ibm-logo">
-            <img src="/images/logo-microsoft.png" alt="Microsoft logo" class="microsoft-logo">
-            <img src="/images/logo-hp.png" alt="Hewlett Packard logo" class="hp-logo">
-            <img src="/images/logo-vector-graphics.png" alt="Vector Graphic logo" class="vg-logo">
-        </section>
+        <div class="partners">
+            <img src="/images/logo-google.png" alt="Google logo" class="partners-logo">
+            <img src="/images/logo-ibm.png" alt="IBM logo" class="partners-logo">
+            <img src="/images/logo-microsoft.png" alt="Microsoft logo" class="partners-logo">
+            <img src="/images/logo-hp.png" alt="Hewlett Packard logo" class="partners-logo">
+            <img src="/images/logo-vector-graphics.png" alt="Vector Graphic logo" class="partners-logo">
+        </div>
         <div class="download">
             <h2 class="download-options">Clipboard for iOS and Mac OS</h2>
             <P class="download-info">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard. </P>
+            <div class="buttons">
             <button class="ios-download">Download for iOS</button>
             <button class="mac-download">Download for Mac </button>
+            </div>
         </div>
         <footer>
-            <nav class="links">
+            <div class="container">
+                <picture>
                 <img src="images/logo.svg" alt="logo" class="webpage-logo">
-                <a class="faq">FAQs</a>
-                <a class="contact">Contact Us</a>
-                <a class="privacy">Privacy Policy</a>
-                <a class="press-kit">Press Kit</a>
-                <a class="install-guide">Install Guide</a>
-            </nav>
-            <nav class="social">
-                <img src="/images/icon-facebook.svg" alt="facebook link" class="facebook-icon">
-                <img src="/images/icon-twitter.svg" alt="twitter link" class="twitter-icon">
-                <img src="/images/icon-instagram.svg" alt="instagram link" class="instagram icon">
-            </nav>
+                </picture>
+                <nav class="links-wrapper">
+                    <a href="#" class="links">FAQs</a>
+                    <a href="#" class="links">Contact Us</a>
+                    <a href="#" class="links">Privacy Policy</a>
+                    <a href="#" class="links">Press Kit</a>
+                    <a href="#" class="links">Install Guide</a>
+                </nav>
+            </div>
+            <div class="social">
+                <img src="/images/icon-facebook.svg" alt="facebook link" class="social-icon">
+                <img src="/images/icon-twitter.svg" alt="twitter link" class="social-icon">
+                <img src="/images/icon-instagram.svg" alt="instagram link" class="social-icon">
+            </div>
         </footer>
     </div>
 </body>

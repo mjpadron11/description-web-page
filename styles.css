@@ -3,6 +3,7 @@
 :root {
     --primary-color: #9FABB2;
     --padding: 2rem;
+    --cursor: pointer;
 }
 
 body {
@@ -12,12 +13,14 @@ body {
     background-color: white;
     color: hsl(210, 10%, 33%);
     font-weight: 400;
+    /* background-color: aquamarine; */
 }
 
 .main-box {
     width: 100%;
     /* max-width: 1400px; */
     z-index: 20;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +28,8 @@ body {
     padding-top: 10rem;
     text-align: center;
     font-size: 18px;
-    box-sizing: border-box;
+    letter-spacing: 5px;
+    box-sizing: 100px;
 }
 
 .title {
@@ -36,7 +40,7 @@ body {
     max-width: 1000px;
 
 }
-.background-image {
+.background-desktop-image {
     width: 100%;
     z-index: 10;
     position: absolute;
@@ -45,15 +49,15 @@ body {
 
 .computer.background-image {
     width: 100%;
-    height: 100%;
 }
 .devices-image {
     width: 100%;
     height: 100%;
-    padding: var(--padding);
 }
 .computer-image {
-    width: 50%;
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
 }
 .clipboard {
     color: var(--primary-color);
@@ -67,10 +71,8 @@ body {
 }
 
 .section-info {
-    /* padding: 4rem 2rem 2rem 4rem; */
     max-width: 800px;
     width: 100%;
-    width: 35% ;
 
 }
 
@@ -89,18 +91,22 @@ body {
 
 .download-info {
     color: var(--primary-color);
+    max-width: 600px;
+    /* width: 100%; */
+    padding: 1rem;
+
 }
 
-.buttons {
-    padding: 4rem;
-}
 .ios-download {
     background-color: hsl(171, 66%, 44%);
     border-radius: 28px;
     color: white;
     border-color: hsl(171, 66%, 44%);
     padding: 1rem;
-    /* width: 12%; */
+    cursor: var(--cursor);
+    margin: 2rem;
+    max-width: 250px;
+    width: 100%;
 }
 .mac-download {
     background-color: hsl(233, 100%, 69%);
@@ -108,11 +114,13 @@ body {
     color: white;
     border-color:hsl(233, 100%, 69%);
     padding: 1rem;
-    /* width: 12%; */
+    cursor: var(--cursor);
+    max-width: 250px;
+    width: 100%;
 }
 .computer-section {
     display: flex;
-    /* justify-content: space-between; */
+    align-items: center;
     text-align: left;
     padding: 4rem 0;
     gap:6.5rem;
@@ -155,30 +163,137 @@ body {
     padding-top: 4rem;
 }
 .partners {
-    /* padding: 4rem; */
-    max-width: 1650px;
+    padding: 5rem 0;
+    max-width: 1700px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
     width: 100%;
+    height: 100%;
+}
+
+
+.partners-logo {
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: content-box;
+}
+
+.download {
+    max-width: 1000px;
+    padding: 3rem 0;
 }
 
 .download-info {
     padding: var(--padding);
+    max-width: 100%;
 }
 
 footer {
     display: flex;
-    background-color: red;
+    background-color: rgb(240, 239, 239);
     justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
-    padding: 3rem 3rem;
+    height: 100%;
+    padding: 3rem 4rem;
 }
-.links {
-    display: flex;
-    
 
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
 }
 .webpage-logo {
     height: 50px;
+}
+.links-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: var(--cursor);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    text-align: left;
+    gap: 2rem;
+}
 
+.links {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.links-wrapper > a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.social {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social-icon {
+    height: 40px;
+    padding: 1rem;
+    cursor: var(--cursor);
+}
+
+@media all and (max-width: 768px) {
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .computer-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 4rem 0;
+        gap:6.5rem;
+    }
+    .computer-image{
+        padding: 3rem 0;
+    }
+
+    .brokendown-features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        ;
+    }
+    .partners-logo {
+        display: flex;
+        max-height: 200px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap:5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+    }
+    .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+    }
 }
