@@ -87,6 +87,9 @@ body {
     padding-bottom: 3rem;
 }
 .features-info {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
     color: var(--primary-color);
     padding: var(--padding);
     justify-content: center;
@@ -182,21 +185,26 @@ body {
 }
 .partners {
     padding: 5rem 2rem;
-    max-width: 1700px;
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-self: center;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    gap: 2rem;
 }
 
+.partners-image {
+    height: 15%;
+}
 
 .partners-logo {
     height: 100%;
     width: 100%;
-    max-width: 200px;
-    box-sizing: content-box;
+    max-width: 150px;
+    gap: 1rem;
+    box-sizing: border-box;
 }
 
 .download { display: flex;
@@ -205,7 +213,7 @@ body {
     align-self: center;
     max-width: 1000px;
     padding: 3rem 0;
-}wrapper
+}
 
 .download-info {
     padding: var(--padding);
@@ -215,7 +223,8 @@ body {
 footer {
     display: flex;
     background-color: rgb(240, 239, 239);
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -224,31 +233,38 @@ footer {
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     gap: 5rem;
+    /* width: 100%; */
 }
 .webpage-logo {
     height: 55px;
+    width: 55px;
 }
 
 .container-webpage-logo {
     display: flex;
     align-self: center;
 }
+
 .links-wrapper {
-    display: flex;
-    align-items: center;
-    cursor: var(--cursor);
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content:space-between;
+    cursor: var(--cursor);
     text-align: left;
     gap: 1rem;
+    box-sizing: border-box;
 }
 
 .links {
+    display: flex;
     text-decoration: none;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .links-wrapper > a:hover {
@@ -315,18 +331,26 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap:5rem;
     }
 
     .container {
         display: flex;
         flex-direction: column;
+        align-self: center;
         padding: 4rem;
     }
     .links-wrapper {
         display: flex;
         flex-direction: column;
+        align-self: center;
         text-align: center;
+    }
+    .links {
+        display: flex;
+        text-align: center;
+        /* max-width: 100px; */
 
     }
     .social {
