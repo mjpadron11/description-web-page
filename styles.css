@@ -229,6 +229,7 @@ footer {
     width: 100%;
     height: 100%;
     padding: 3rem 4rem;
+    gap: 2rem;
 }
 
 .container {
@@ -237,7 +238,6 @@ footer {
     align-items: center;
     align-content: center;
     gap: 5rem;
-    /* width: 100%; */
 }
 .webpage-logo {
     height: 55px;
@@ -276,11 +276,13 @@ footer {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
 }
 .social-icon {
     height: 30px;
     padding: 1rem;
     cursor: var(--cursor);
+    /* box-sizing: border-box; */
 }
 
 @media all and (max-width: 768px) {
@@ -332,7 +334,6 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap:5rem;
     }
 
     .container {
@@ -350,7 +351,6 @@ footer {
     .links {
         display: flex;
         text-align: center;
-        /* max-width: 100px; */
 
     }
     .social {
