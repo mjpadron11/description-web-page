@@ -23,6 +23,7 @@ body {
     text-align: center;
     font-size: 18px;
     letter-spacing: 5px;
+    line-height: 2rem;
     box-sizing: content-box;
 }
 
@@ -36,13 +37,13 @@ body {
     flex-direction: column;
     justify-items: center;
     align-self: center;
+    padding: 2rem;
 
 }
 .background-desktop-image {
     width: 100%;
     z-index: 10;
     position: absolute;
-    border-color: black;
 }
 .webpage-main-logo {
     width: 100%;
@@ -99,13 +100,8 @@ body {
 .download-info {
     color: var(--primary-color);
     max-width: 600px;
-    /* width: 100%; */
     padding: 1rem;
 }
-
-/* .buttons {
-    padding: 1rem;
-} */
 
 .ios-download {
     background-color: hsl(171, 66%, 44%);
@@ -136,7 +132,6 @@ body {
     text-align: left;
     padding: 4rem 0;
     gap:6.5rem;
-
     }
 
 .clipboard-section {
@@ -156,6 +151,7 @@ body {
     padding: 3rem ;
     box-sizing: border-box;
 }
+
 .features {
     max-width: 1600px;
     width: 100%;
@@ -170,6 +166,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .feature-icon {
     height: 40px;
 }
@@ -183,6 +180,7 @@ body {
 .snippets {
     padding-top: 4rem;
 }
+
 .partners {
     padding: 5rem 2rem;
     max-width: 1500px;
