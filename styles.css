@@ -230,6 +230,7 @@ footer {
     height: 100%;
     padding: 3rem 4rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -237,6 +238,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    /* white-space: nowrap; */
     gap: 5rem;
 }
 .webpage-logo {
@@ -277,10 +279,10 @@ footer {
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
+    gap: 2rem;
 }
 .social-icon {
     height: 30px;
-    padding: 1rem;
     cursor: var(--cursor);
     box-sizing: border-box;
 }
