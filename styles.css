@@ -286,6 +286,15 @@ footer {
     cursor: var(--cursor);
     box-sizing: border-box;
 }
+@media all and (max-width: 1080px) {
+
+    .social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 
 @media all and (max-width: 768px) {
     .main-box{
